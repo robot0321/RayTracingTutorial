@@ -17,7 +17,7 @@ class Vector:
         return math.sqrt(self.dot(self))
 
     def normalize(self):
-        return self/mag(self)
+        return self/self.mag()
 
     def __add__(self, other):
         return Vector(self.x+other.x, self.y+other.y, self.z+other.z)
